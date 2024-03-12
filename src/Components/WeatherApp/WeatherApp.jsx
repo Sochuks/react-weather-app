@@ -10,7 +10,7 @@ import wind_icn from '../WeatherApp/img/wind.png'
 
 const WeatherApp = () => {
   return (
-    <div className='app-main flex-column mx-auto'>
+    <div className='app-main flex-column mx-auto rounded-md'>
         {/* Header Component */}
         <Header />
         <h4>stew Age</h4>

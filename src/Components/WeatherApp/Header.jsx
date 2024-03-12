@@ -2,14 +2,18 @@ import search_icn from '../WeatherApp/img/search.png'
 
 const Header = () => {
   return (
-    <header>
+    <header className='pt-10'>
         {/* Header container */}
-        <div className="container grid grid-cols-2 items-center text-center gap-3">
+        <div className="flex justify-center items-center gap-4">
             
             {/* Search Box */}
-            <input type="text" name="" id="" />
+            <>
+                <input type="text" className="text-2xl font-normal bg-green-100" />
+            </>
             {/* Search Icon */}
-            <img src={search_icn} alt="Search" />
+            <div className="flex justify-center bg-green-100 rounded-full w-14 h-14 items-center">
+                <img src={search_icn} alt="Search" />
+            </div>
         </div>
     </header>
   )

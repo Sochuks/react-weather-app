@@ -50,14 +50,15 @@ button:hover {
 }
 
 input {
-  padding: 5px;
+  height: 80px;
   border: 1px solid #33333333;
-  font-size: 16px;
-  border-radius: 5px;
+  width: 350px;
+  height: 60px;
+  border-radius: 65px;
 }
 
 .app-main{
-  width: 450px;
+  width: 500px;
   height: 600px;
   background-image: linear-gradient(to bottom right, #4dc0b5, #3490dc);
 }
