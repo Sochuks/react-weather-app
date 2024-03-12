@@ -1,3 +1,5 @@
+import Header from './Header'
+// Weather - Icons
 import clear_icn from '../WeatherApp/img/clear.png'
 import cloud_icn from '../WeatherApp/img/cloud.png'
 import drizzle_icn from '../WeatherApp/img/drizzle.png'
@@ -8,7 +10,9 @@ import wind_icn from '../WeatherApp/img/wind.png'
 
 const WeatherApp = () => {
   return (
-    <div>
+    <div className='app-main flex-column mx-auto'>
+        {/* Header Component */}
+        <Header />
         <h4>stew Age</h4>
     </div>
   )
