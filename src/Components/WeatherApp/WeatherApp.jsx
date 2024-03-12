@@ -1,4 +1,6 @@
 import Header from './Header'
+import Weather_details from './Weather'
+
 // Weather - Icons
 import clear_icn from '../WeatherApp/img/clear.png'
 import cloud_icn from '../WeatherApp/img/cloud.png'
@@ -13,7 +15,7 @@ const WeatherApp = () => {
     <div className='app-main flex-column mx-auto rounded-md'>
         {/* Header Component */}
         <Header />
-        <h4>stew Age</h4>
+
     </div>
   )
 }
