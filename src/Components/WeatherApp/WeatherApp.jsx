@@ -1,4 +1,3 @@
-import search_icn from '../WeatherApp/img/search.png'
 import clear_icn from '../WeatherApp/img/clear.png'
 import cloud_icn from '../WeatherApp/img/cloud.png'
 import drizzle_icn from '../WeatherApp/img/drizzle.png'
