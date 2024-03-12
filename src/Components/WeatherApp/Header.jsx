@@ -8,7 +8,7 @@ const Header = () => {
             
             {/* Search Box */}
             <>
-                <input type="text" className="text-2xl font-normal bg-green-100" />
+                <input type="text" placeholder='Search' className="p-4 text-xl font-normal bg-green-100" />
             </>
             {/* Search Icon */}
             <div className="flex justify-center bg-green-100 rounded-full w-14 h-14 items-center">
