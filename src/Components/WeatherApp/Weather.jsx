@@ -10,45 +10,46 @@ import wind_icn from '../WeatherApp/img/wind.png'
 const Weather = () => {
   return (
     // Container
-    <div className='flex-column p-4'>
+    <div className='flex flex-col items-center p-4'>
         {/* Weather Details */}
-        <div>
+        <div className="flex flex-col items-center justify-center">
             {/* Weather Icon */}
-            <div className="flex justify-center">
+            <div>
                 <img src={cloud_icn} alt="" />
             </div>
             {/* Temperature */}
-            <div className="flex justify-center text-5xl text-white font-normal">
-                    24 DEG
+            <div className="text-6xl text-white font-normal">
+                    24°c
             </div>
             {/* Location */}
-            <div className="weather-location">
+            <div className="text-3xl text-white font-normal">
                         London
             </div>
       
         </div>
 
         {/* Weather Data */}
-        <div>
+        <div className="flex justify-between items-center mt-10 gap-12">
             {/* Humidity element */}
-            <div>
+            <div className='flex items-center mx-auto gap-2'>
                 {/* element icon */}
-                <img src={humidity_icn} alt="" />
+                    <img src={humidity_icn} alt="" />
+                
                 {/* data */}
-                <div>
+                <div className='text-2xl text-white'> 
                     <div className="percentage">30%</div>
-                    <div className="text">Humidity</div>
+                    <div className="text-white text-xl font-normal">Humidity</div>
                 </div>
             </div>
 
             {/* wind element */}
-            <div>
+            <div className='flex items-center gap-2'>
                 {/* element icon */}
                 <img src={wind_icn} alt="" />
                 {/* data */}
-                <div>
+                <div className='text-2xl text-white'>
                     <div className="percentage">20 km/h</div>
-                    <div className="text">Wind Speed</div>
+                    <div className="text-white text-xl font-normal">Wind Speed</div>
                 </div>
             </div>
 
