@@ -19,6 +19,9 @@ const fetchData= async (cityInput)=> {
             alert('City not found! Enter a valid city name')
             return;
         }
+        const data = await res.json();
+        // call setWeatherData for weatherData
+        setWeatherData(data); 
     }
         catch{}
 }
