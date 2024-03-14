@@ -29,14 +29,15 @@ const Weather = (weatherData) => {
             </div>
             }
             {/* Temperature */}
+            {weatherData && 
             <div className="text-6xl text-white font-normal">
-                    24°c
+                    {weatherData.main.temp}°c
             </div>
+            }
             {/* Location */}
-            <div className="text-3xl text-white font-normal">
-                        London
-            </div>
-      
+            {weatherData &&
+                <div className="text-3xl text-white font-normal">{weatherData.name}</div>
+            }
         </div>
 
         {/* Weather Data */}
