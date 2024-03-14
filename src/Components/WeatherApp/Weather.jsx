@@ -23,9 +23,11 @@ const Weather = (weatherData) => {
         {/* Weather Details */}
         <div className="flex flex-col items-center justify-center">
             {/* Weather Icon */}
+            {weatherData && 
             <div>
-                <img src={cloud_icn} alt="" />
+                <img src={weatherIcn[weatherData.weather[0].main]} alt="" />
             </div>
+            }
             {/* Temperature */}
             <div className="text-6xl text-white font-normal">
                     24°c
