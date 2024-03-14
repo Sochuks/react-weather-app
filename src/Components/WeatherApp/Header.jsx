@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import search_icn from '../WeatherApp/img/search.png'
 
-const Header = () => {
+const Header = (addCity) => {
 
     const [city, setCity] = useState('')
 
