@@ -31,9 +31,9 @@ const fetchData= async (cityInput)=> {
   return (
     <div className='app-main flex-col mx-auto rounded-md'>
         {/* Header Component */}
-        <Header />
+        <Header addCity={fetchData} />
         {/* Weather Component */}
-        <Weather />
+        <Weather weather={weatherData}  />
     </div>
   )
 }
