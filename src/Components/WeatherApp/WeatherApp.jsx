@@ -8,7 +8,10 @@ const WeatherApp = () => {
 // Declare useState
 const [weatherData, setWeatherData] = useState()
 
+// fetch city data
+const fetchData=(cityInput)=>{
 
+}
   return (
     <div className='app-main flex-col mx-auto rounded-md'>
         {/* Header Component */}
