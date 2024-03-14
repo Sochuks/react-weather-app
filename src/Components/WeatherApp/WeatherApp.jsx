@@ -14,7 +14,11 @@ const fetchData= async (cityInput)=> {
     
     // error handling
     try{
-
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=Metric&uk&APPID=09f9327956dcd39a294c20990d9d4eb5`);
+        if(!res.ok){
+            alert('City not found! Enter a valid city name')
+            return;
+        }
     }
         catch{}
 }
