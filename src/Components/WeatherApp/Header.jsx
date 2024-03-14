@@ -24,16 +24,21 @@ const Header = ({addCity}) => {
         <div className="flex justify-center items-center gap-4">
             
             {/* Search Box */}
-            <>
+            <form onSubmit={checkCity}>
                 <input type="text" placeholder='Search' 
-                className="p-4 text-xl font-normal bg-green-100" 
-                value={cityInput} onChange={(e) => {setCityInput(e.target.value)}}/>
-            </>
+                className="p-4 text-xl font-normal bg-green-100 focus:outline-none" 
+                value={cityInput} 
+                onChange={(e) => 
+                {setCityInput(e.target.value)}}
+                aria-label='Enter city name'/>
+            </form>
             {/* Search Icon */}
-            <div className="flex justify-center bg-green-100 rounded-full w-14 h-14 items-center"
-            onClick={checkCity}>
+            <button className="flex justify-center bg-green-100 
+            rounded-full w-14 h-14 
+            items-center"
+            aria-label='Search'>
                 <img src={search_icn} alt="Search" />
-            </div>
+            </button>
         </div>
     </header>
   )
