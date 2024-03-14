@@ -9,8 +9,14 @@ const WeatherApp = () => {
 const [weatherData, setWeatherData] = useState()
 
 // fetch city data
-const fetchData=(cityInput)=>{
+const fetchData= async (cityInput)=> {
+    const cityName = cityInput.trim();
+    
+    // error handling
+    try{
 
+    }
+        catch{}
 }
   return (
     <div className='app-main flex-col mx-auto rounded-md'>
