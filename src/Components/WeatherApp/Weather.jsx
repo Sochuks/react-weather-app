@@ -7,7 +7,16 @@ import rain_icn from '../WeatherApp/img/rain.png'
 import snow_icn from '../WeatherApp/img/snow.png'
 import wind_icn from '../WeatherApp/img/wind.png'
 
-const Weather = () => {
+const Weather = (weatherData) => {
+    // Map weather icons to description in data
+    const weatherIcn = {
+        Clear: clear_icn,
+        Clouds: cloud_icn,
+        Drizzle: drizzle_icn,
+        Rain: rain_icn,
+        Snow: snow_icn,
+        Wind: wind_icn,
+    }
   return (
     // Container
     <div className='flex flex-col items-center p-4'>
