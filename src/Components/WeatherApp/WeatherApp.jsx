@@ -23,7 +23,10 @@ const fetchData= async (cityInput)=> {
         // call setWeatherData for weatherData
         setWeatherData(data); 
     }
-        catch{}
+        catch(error){
+            console.log('error fetching data', error);
+            alert("An error occur while getting weather data")
+        }
 }
   return (
     <div className='app-main flex-col mx-auto rounded-md'>
