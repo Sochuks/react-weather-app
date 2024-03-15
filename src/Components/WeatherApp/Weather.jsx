@@ -7,7 +7,11 @@ import rain_icn from '../WeatherApp/img/rain.png'
 import snow_icn from '../WeatherApp/img/snow.png'
 import wind_icn from '../WeatherApp/img/wind.png'
 
-const Weather = (weatherData) => {
+const Weather = ({weatherData}) => {
+    // page loader
+    if(!weatherData){
+        return <div>Loading....</div>
+    }
     // Map weather icons to description in data
     const weatherIcn = {
         Clear: clear_icn,
@@ -49,7 +53,7 @@ const Weather = (weatherData) => {
                 
                 {/* data */}
                 <div className='text-2xl text-white'> 
-                    <div className="percentage">30%</div>
+                    <div className="percentage">{weatherData && weatherData.main.humidity}%</div>
                     <div className="text-white text-xl font-normal">Humidity</div>
                 </div>
             </div>
@@ -60,7 +64,7 @@ const Weather = (weatherData) => {
                 <img src={wind_icn} alt="" />
                 {/* data */}
                 <div className='text-2xl text-white'>
-                    <div className="percentage">20 km/h</div>
+                    <div className="percentage">{weatherData && weatherData.wind.speed}km/h</div>
                     <div className="text-white text-xl font-normal">Wind Speed</div>
                 </div>
             </div>

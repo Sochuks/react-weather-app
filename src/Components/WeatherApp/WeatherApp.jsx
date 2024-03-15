@@ -33,7 +33,7 @@ const fetchData= async (cityInput)=> {
         {/* Header Component */}
         <Header addCity={fetchData} />
         {/* Weather Component */}
-        <Weather weather={weatherData}  />
+        <Weather weatherData={weatherData}  />
     </div>
   )
 }

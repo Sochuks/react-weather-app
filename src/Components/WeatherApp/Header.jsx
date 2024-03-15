@@ -15,7 +15,7 @@ const Header = ({addCity}) => {
         }
         // call addCity prop
         addCity(cityInput.trim())
-        setCity('')
+        setCityInput('')
     }
 
   return (
@@ -24,19 +24,20 @@ const Header = ({addCity}) => {
         <div className="flex justify-center items-center gap-4">
             
             {/* Search Box */}
-            <form onSubmit={checkCity}>
+            <div>
                 <input type="text" placeholder='Search' 
                 className="p-4 text-xl font-normal bg-green-100 focus:outline-none" 
                 value={cityInput} 
                 onChange={(e) => 
                 {setCityInput(e.target.value)}}
                 aria-label='Enter city name'/>
-            </form>
+            </div>
             {/* Search Icon */}
             <button className="flex justify-center bg-green-100 
             rounded-full w-14 h-14 
             items-center"
-            aria-label='Search'>
+            aria-label='Search'
+            onClick={checkCity}>
                 <img src={search_icn} alt="Search" />
             </button>
         </div>
